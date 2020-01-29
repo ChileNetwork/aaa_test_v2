@@ -3,6 +3,7 @@ namespace App;
 /*
 User class that provides a nice high-level interface
 */
+//Define a constant outside of the User class:
 
 
 class User
@@ -20,6 +21,7 @@ class User
 	}
 
 	//Setter Injection: and setter injection is best for optional dependencies
+	//$storage: Class injection
 	public function setSessionStorage($storage)
     {
         $this->storage = $storage;
@@ -38,5 +40,3 @@ class User
 	// ...
 }
 
-//Define a constant outside of the User class:
-define('STORAGE_SESSION_NAME', 'SESSION_ID_NINO');
