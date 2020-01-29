@@ -33,7 +33,8 @@ require_once __DIR__ . '/../vendor/autoload.php';
 //Using my Container passing parameters
 //$parameters = ['user.session_id'=>'SESSION_ID_HOY'];
 $container = new Container([
-	'user.session_id' => 'SESSION_ID_HOY'
+	'user.session_id' => 'SESSION_ID_EXITO',
+	'user.class'      => 'App\User',
 ]);
 $user = $container->getUser();
 
